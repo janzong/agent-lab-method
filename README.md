@@ -9,3 +9,8 @@ python -m venv .venv
 .venv/bin/pip install -e ".[test]" -i https://pypi.tuna.tsinghua.edu.cn/simple
 .venv/bin/python -m pytest -q
 ```
+
+## Related
+
+- Negative-result article: <https://dev.to/janzong/we-ran-2-vs-4-agents-six-times-four-agents-cost-21x-and-did-not-improve-success-k98>
+- Trust layer: <https://github.com/janzong/agent-lab-trust>

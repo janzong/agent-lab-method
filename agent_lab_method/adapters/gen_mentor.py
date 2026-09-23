@@ -365,7 +365,7 @@ class GenMentorAdapter:
     def _iso_ms(self, value: Any) -> str | None:
         if not isinstance(value, (int, float)) or isinstance(value, bool):
             return None
-        return dt.datetime.fromtimestamp(value / 1000, tz=dt.timezone.utc).astimezone().isoformat(timespec="seconds")
+        return dt.datetime.fromtimestamp(value / 1000, tz=dt.timezone.utc).isoformat(timespec="seconds")
 
     def _optional_int(self, value: Any) -> int | None:
         return int(value) if isinstance(value, (int, float)) and not isinstance(value, bool) else None

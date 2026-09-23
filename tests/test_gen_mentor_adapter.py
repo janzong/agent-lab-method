@@ -19,8 +19,8 @@ def test_gen_mentor_adapter_normalizes_replay_archive(tmp_path: Path) -> None:
     assert run.project == "gen-mentor"
     assert run.mode == "replay"
     assert run.success is True
-    assert run.started_at == "2026-09-17T13:20:07+08:00"
-    assert run.finished_at == "2026-09-20T13:20:07+08:00"
+    assert run.started_at == "2026-09-17T05:20:07+00:00"
+    assert run.finished_at == "2026-09-20T05:20:07+00:00"
     assert run.metrics.calls == 4
     assert run.metrics.step_count == 1
     assert run.agents == ["Pandas Practice", "Python Fundamentals"]

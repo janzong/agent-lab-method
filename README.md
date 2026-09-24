@@ -11,3 +11,8 @@ python -m venv .venv
 .venv/bin/pip install -e ".[test]" -i https://pypi.tuna.tsinghua.edu.cn/simple
 .venv/bin/python -m pytest -q
 ```
+
+## Reproductions wanted
+
+This is `v0.1.0`. I am looking for **3 independent reproductions by non-authors**:
+<https://github.com/janzong/agent-lab-method/issues/1> — expected **9 passed**.

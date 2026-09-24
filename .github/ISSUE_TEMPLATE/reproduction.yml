@@ -1,0 +1,31 @@
+name: Reproduction report
+description: Report an independent reproduction of agent-lab-method
+title: "[reproduction] "
+labels: ["reproduction"]
+body:
+  - type: input
+    id: machine
+    attributes:
+      label: Machine / Python
+      description: OS, Python version
+    validations:
+      required: true
+  - type: input
+    id: tests
+    attributes:
+      label: Tests
+      description: Expected 9 passed
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit / artifact SHA
+      description: git rev-parse HEAD, or artifact SHA-256
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Mismatch or notes
+      description: Do not paste logs or credentials.
